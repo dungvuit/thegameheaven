@@ -13,7 +13,7 @@
     <div class="row m-0">
       <?php if(has_post_thumbnail()) {?>
         <div class="box-image col-lg-6 col-md-6">
-          <?php the_post_thumbnail(); ?>
+          <a href="<?php the_permalink(); ?>"><?php the_post_thumbnail(); ?></a>
         </div>
       <?php } ?>
       <div class="new-text <?php if(has_post_thumbnail()) { ?>col-lg-6 col-md-6"<?php } else { ?>col-lg-12 col-md-12 <?php } ?>">
@@ -33,9 +33,6 @@
           <hr>
         </div>      
         <p><?php $excerpt = get_the_excerpt(); echo esc_html( vw_writer_blog_string_limit_words( $excerpt, esc_attr(get_theme_mod('vw_writer_blog_excerpt_number','30')))); ?></p>
-        <div class="content-bttn">
-          <a href="<?php echo esc_url( get_permalink() );?>" class="blogbutton-small" title="<?php esc_attr_e( 'READ MORE','vw-writer-blog' ); ?>"><?php esc_html_e('READ MORE','vw-writer-blog'); ?></a><i class="fas fa-long-arrow-alt-right"></i>
-        </div>
       </div>
     </div>
   </div>
