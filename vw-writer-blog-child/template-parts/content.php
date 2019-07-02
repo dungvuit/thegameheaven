@@ -23,10 +23,6 @@
             <span class="entry-date"><?php the_date(); ?></span><span>|</span>
           <?php } ?>
           
-          <?php if(get_theme_mod('vw_writer_blog_toggle_author',true)==1){ ?>  
-            <span class="entry-author"> <?php the_author(); ?></span><span>|</span>
-          <?php } ?>
-
           <?php if(get_theme_mod('vw_writer_blog_toggle_comments',true)==1){ ?>  
             <span class="entry-comments"><?php comments_number( __('0 Comment', 'vw-writer-blog'), __('0 Comments', 'vw-writer-blog'), __('% Comments', 'vw-writer-blog') ); ?> </span>
           <?php } ?>
