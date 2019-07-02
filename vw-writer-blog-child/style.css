@@ -3,3 +3,11 @@ Theme Name: VW Writer Blog Child
 Template: vw-writer-blog
 Text Domain: vw-writer-blog-child
 */
+
+#footer-ct{
+	background:#e8f175;
+}
+
+.font-weight-bold{
+	margin-top: 10px;
+}
