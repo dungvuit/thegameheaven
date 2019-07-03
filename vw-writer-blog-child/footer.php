@@ -51,12 +51,50 @@
         </div>
     </div>
 </div>
+    <div id="footer-ct" >
+        <div class="container text-center text-md-left"  >
 
-<div class="footer-2">
-    <div class="copyright container">
-        <p>Copyright 2018- <a href="<?php bloginfo('name') ?>" target="_blank">Writer WordPress Theme</a></p>
-                        <a href="#" class="scrollup"><i class="fas fa-arrow-up" style="display: inline;"></i></a>
+        <!-- Grid row -->
+            <div class="row">
+
+              <!-- Grid column -->
+                <div class="col-md-6 mt-md-0 mt-3">
+
+                    <!-- Content -->
+                    <p class="text-uppercase font-weight-bold">Thông tin : </p>
+                    <p>The game heaven là trang tin tức giải trí game hàng đầu Việt Nam. Cung cấp Thông tin game, trò chơi trong nước và nước ngoài uy tín.</p>
+
+                </div>
+              <!-- Grid column -->
+
+                <hr class="clearfix w-100 d-md-none pb-3">
+
+              <!-- Grid column -->
+                <div class="col-md-6 mb-md-0 mb-3">
+
+                <!-- Content -->
+                <p class="text-uppercase font-weight-bold">Liên Hệ :</p>
+                    <ul>
+                        <li>Địa chỉ: số 8 Lê Đại Hành, Hai Bà Trưng, Hà Nội</li>
+                        <li>SĐT: 0988882266</li>
+                        <li>Email:<a href="info@thegameheaven.com"> info@thegameheaven.com</a></li>
+                    </ul>
+                </div>
+              <!-- Grid column -->
             </div>
+            <!-- Grid row -->
+        </div>
+    </div>
+  <!-- Footer Text -->
+<div class="footer-2">
+
+
+  <!-- Copyright -->
+
+    <div class="copyright container">
+        <p>Copyright © 2019 - <a href="<?php bloginfo('home') ?>" target="_blank">www.thegameheaven.com. All rights reserved.</a></p>
+        <a href="#" class="scrollup"><i class="fas fa-arrow-up" style="display: inline;"></i></a>
+    </div>
     <div class="clear"></div>
 </div>
 

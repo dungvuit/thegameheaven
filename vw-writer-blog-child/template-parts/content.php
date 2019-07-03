@@ -7,17 +7,17 @@
  * @since VW Writer Blog 1.0
  */
 ?>
-
+text
 <div id="post-<?php the_ID(); ?>" <?php post_class('inner-service'); ?>>
   <div class="post-main-box ">
     <div class="row m-0">
       <?php if(has_post_thumbnail()) {?>
         <div class="box-image col-lg-6 col-md-6">
-          <a href="<?php the_permalink(); ?>"><?php the_post_thumbnail(); ?></a>
+          <a href="<?php the_permalink(); ?>"><?php the_post_thumbnail('full',['alt' => get_the_title()]); ?></a>
         </div>
       <?php } ?>
       <div class="new-text <?php if(has_post_thumbnail()) { ?>col-lg-6 col-md-6"<?php } else { ?>col-lg-12 col-md-12 <?php } ?>">
-        <h2 class="section-title"><a href="<?php echo esc_url( get_permalink() ); ?>" title="<?php the_title_attribute(); ?>"><?php the_title();?></a></h2>
+        <p class="section-title"><a href="<?php echo esc_url( get_permalink() ); ?>" title="<?php the_title_attribute(); ?>"><?php the_title();?></a></p>
         <div class="post-info">
           <?php if(get_theme_mod('vw_writer_blog_toggle_postdate',true)==1){ ?>
             <span class="entry-date"><?php the_date(); ?></span><span>|</span>
