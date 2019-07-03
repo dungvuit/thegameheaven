@@ -11,14 +11,16 @@
  */
 
 get_header(); ?>
-
+  <h1 style="display: none;">
+  <?php bloginfo('name'); ?>
+</h1>
 <div class="container">
   <div class="middle-align">
     <?php
         $theme_lay = get_theme_mod( 'vw_writer_blog_theme_options','Right Sidebar');
         if($theme_lay == 'Left Sidebar'){ ?>
         <div class="row">
-          <div class="col-lg-4 col-md-4 sidebar"><?php dynamic_sidebar('sidebar-1');?></div>
+          <div class="col-lg-4 col-md-4 sidebar"><?php dynamic_sidebar('sidebar-child-1');?></div>
           <div id="our-services" class="services col-lg-8 col-md-8">
                     
             <?php if ( have_posts() ) :
@@ -81,7 +83,7 @@ get_header(); ?>
                 <div class="clearfix"></div>
             </div>
           </div>
-          <div class="col-lg-4 col-md-4 sidebar"><?php dynamic_sidebar('sidebar-1');?></div>
+          <div class="col-lg-4 col-md-4 sidebar"><?php dynamic_sidebar('sidebar-child-1');?></div>
         </div>
     <?php }else if($theme_lay == 'One Column'){ ?>
         <div id="our-services" class="services">                   
@@ -114,7 +116,7 @@ get_header(); ?>
         </div>
     <?php }else if($theme_lay == 'Three Columns'){ ?>
         <div class="row">
-          <div class="col-lg-3 col-md-3 sidebar"><?php dynamic_sidebar('sidebar-1');?></div>
+          <div class="col-lg-3 col-md-3 sidebar"><?php dynamic_sidebar('sidebar-child-1');?></div>
           <div id="our-services" class="services col-lg-6 col-md-6">
                       
             <?php if ( have_posts() ) :
@@ -144,11 +146,11 @@ get_header(); ?>
                 <div class="clearfix"></div>
             </div>
           </div>
-          <div class="col-lg-3 col-md-3 sidebar"><?php dynamic_sidebar('sidebar-2');?></div>
+          <div class="col-lg-3 col-md-3 sidebar"><?php dynamic_sidebar('sidebar-child-1');?></div>
         </div>
     <?php }else if($theme_lay == 'Four Columns'){ ?> 
         <div class="row">
-          <div class="col-lg-3 col-md-3 sidebar"><?php dynamic_sidebar('sidebar-1');?></div>
+          <div class="col-lg-3 col-md-3 sidebar"><?php dynamic_sidebar('sidebar-child-1');?></div>
           <div id="our-services" class="services col-lg-3 col-md-3">
                       
             <?php if ( have_posts() ) :
@@ -178,8 +180,8 @@ get_header(); ?>
                 <div class="clearfix"></div>
             </div>
           </div>
-          <div class="col-lg-3 col-md-3 sidebar"><?php dynamic_sidebar('sidebar-2');?></div>
-          <div class="col-lg-3 col-md-3 sidebar"><?php dynamic_sidebar('sidebar-3');?></div>
+          <div class="col-lg-3 col-md-3 sidebar"><?php dynamic_sidebar('sidebar-child-1');?></div>
+          <div class="col-lg-3 col-md-3 sidebar"><?php dynamic_sidebar('sidebar-child-1');?></div>
         </div>
     <?php }else if($theme_lay == 'Grid Layout'){ ?>
         <div class="row">
@@ -213,7 +215,7 @@ get_header(); ?>
                 <div class="clearfix"></div>
             </div>
           </div>
-          <div class="col-lg-3 col-lg-3 sidebar"><?php dynamic_sidebar('sidebar-1');?></div>
+          <div class="col-lg-3 col-lg-3 sidebar"><?php dynamic_sidebar('sidebar-child-1');?></div>
         </div>
     <?php } else { ?>
         <div class="row">
@@ -246,7 +248,7 @@ get_header(); ?>
                 <div class="clearfix"></div>
             </div>
           </div>
-          <div class="col-lg-4 col-md-4 sidebar"><?php dynamic_sidebar('sidebar-1');?></div>
+          <div class="col-lg-4 col-md-4 sidebar"><?php dynamic_sidebar('sidebar-child-1');?></div>
         </div>
     <?php } ?>
     <div class="clearfix"></div>
